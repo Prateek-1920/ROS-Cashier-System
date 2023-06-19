@@ -1,0 +1,10 @@
+<launch>
+
+  <node pkg="billing" type="publisher.py" name="publisher_node" output="screen"
+    launch-prefix="gnome-terminal --command"></node>
+  <node pkg="billing" type="subscriber.py" name="subscirber_node" output="screen"
+    launch-prefix="gnome-terminal --command"></node>
+  <node pkg="billing" type="monitor.py" name="monitor_node" output="screen"
+    launch-prefix="gnome-terminal --command"></node>
+
+</launch>
